@@ -1,6 +1,6 @@
 
 import { useContext } from "react";
-import { useGetThemeContext,  ThemeContextProvider, ThemeContext} from "./contexts/ThemeContext";
+import { ThemeContextProvider, ThemeContext} from "./contexts/ThemeContext";
 
 function AnotherApp() {
 
@@ -20,10 +20,10 @@ function AnotherApp() {
 
 export const OneMoreComponent = () => {
 
-  const theme = useContext(ThemeContext);
+  const context = useContext(ThemeContext);
   return (
     <>
-      <div>This is another component using {theme} theme</div>
+      This is another component using theme {context?.theme}
     </>
   )
 }

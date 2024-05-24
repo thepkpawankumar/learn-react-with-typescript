@@ -9,21 +9,21 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const anotherRoot = ReactDOM.createRoot(
-  document.getElementById('another-root') as HTMLElement
-);
-
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
+// const anotherRoot = ReactDOM.createRoot(
+//   document.getElementById('another-root') as HTMLElement
 // );
 
-anotherRoot.render(
+root.render(
   <React.StrictMode>
-    <AnptherApp />
+    <App />
   </React.StrictMode>
 );
+
+// anotherRoot.render(
+//   <React.StrictMode>
+//     <AnptherApp />
+//   </React.StrictMode>
+// );
 
 
 // If you want to start measuring performance in your app, pass a function
