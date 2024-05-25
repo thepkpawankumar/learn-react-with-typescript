@@ -12,11 +12,6 @@ export const BadContextExample = () => {
 
   const [value, setValue] = useState("Test");
 
-  useEffect(() => {
-
-    console.log('BadContextExample')
-  });
-
   return (
     <BadContext.Provider value={{
       value, 
@@ -52,16 +47,14 @@ export const Component1 = () => {
 }
 export const Component2 = () => {
 
-  const context = useContext(BadContext);
-
   useEffect(() => {
 
-    console.log('Component2', context?.value)
+    console.log('Component2')
   });
 
   return (
     <>
-    Value2: {context?.value}
+      Component 2
     </>
   )
 }
