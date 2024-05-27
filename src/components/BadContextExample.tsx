@@ -7,7 +7,12 @@ type BadContextProviderProps = {
 
 export const BadContext = createContext<BadContextProviderProps | null>(null); 
 
-
+/**
+ * This is bad context example as you can see here, I have used useContext() only in component 1 and when i click, button
+ * in component 1 then component 2 is also rendering, which is wrong
+ * To overcome it, context should be created like in authcontext 
+ * Using a component and children as props
+ */
 export const BadContextExample = () => {
 
   const [value, setValue] = useState("Test");
