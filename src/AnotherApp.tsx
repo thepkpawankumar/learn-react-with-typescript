@@ -7,14 +7,11 @@ function AnotherApp() {
   return (
     
     <ThemeContextProvider>
-      <>
+    <>
       This is a component
       <OneMoreComponent />
-
     </>
-
     </ThemeContextProvider>
-    
   );
 }
 
