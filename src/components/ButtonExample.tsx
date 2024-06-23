@@ -7,7 +7,7 @@ type ButtonExampleProps =  {
 
 export const ButtonExample = ({title}: ButtonExampleProps) => {
 
-    const [disabled, setDisabled] = useState<boolean>(false)
+const [disabled, setDisabled] = useState<boolean>(false)
 
   return (
     <div>
