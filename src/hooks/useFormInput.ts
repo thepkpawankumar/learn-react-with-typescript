@@ -7,6 +7,7 @@ export const useFormInput = () => {
     const handleValueChange = (e: {target: HTMLInputElement}) => setValue(e.target.value);
 
     return {
+        
         value: value,
         handleValueChange: handleValueChange
     }
