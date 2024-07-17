@@ -10,7 +10,6 @@ function App() {
     <BadContextExample />
     <ButtonExample title="This is my button"  />
     <ReducerExample />
-
     </>
   );
 }
